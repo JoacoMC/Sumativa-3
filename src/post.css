@@ -1,0 +1,53 @@
+.notes {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.note-item {
+  list-style: none;
+}
+
+.postit {
+  margin : 20px;
+  height: 280px;
+  width: 280px;
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  border-radius: 8px;
+  box-sizing: border-box;
+  overflow: auto;
+  position: relative;
+  transition: transform 0.15s linear;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  overflow-x: hidden;
+}
+
+.rotate-1 {
+  transform: rotate(-6deg);
+}
+.rotate-2 {
+  transform: rotate(4deg);
+  top: 5px;
+  position: relative;
+}
+.rotate-3 {
+  transform: rotate(-2deg);
+}
+
+.red-bg {
+  background-color: #ed5565;
+  color: rgb(0, 0, 0);
+}
+.lazur-bg {
+  background-color: #ffeba1;
+  color: rgb(0, 0, 0);
+}
+
+@media (max-width: 768px) {
+  .notes {
+    grid-template-columns: 1fr;
+  }
+}
